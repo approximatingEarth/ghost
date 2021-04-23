@@ -1759,3 +1759,24 @@ aside.onebox {
 .admin-content {
   margin-bottom: 10px;
 }
+
+
+.btn.btn-default, .btn.btn-primary, .btn.btn-danger {
+  .discourse-no-touch & {
+    &:hover, &.btn-hover {
+      box-shadow: none;
+    }
+  }
+}
+
+.nav-pills, .admin-controls .nav-pills {
+  >li>a:hover, >li.active>a, >li>a.active {
+    box-shadow: none;
+  }
+}
+
+// On mobile only
+.nav-pills > li.navigation-toggle {
+  box-shadow: none;
+}
+
